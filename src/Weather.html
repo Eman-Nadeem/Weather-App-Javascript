@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather App</title>
+  <link href="./output.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  <div class="flex justify-center items-center h-screen">
+    <div class="rounded-lg shadow-lg shadow-slate-300 px-6 py-8 flex flex-col items-center justify-center">
+      <div class="flex gap-2 items-center">
+        <input type="text" placeholder="Enter a City Name" class="js-input placeholder:text-slate-400 placeholder:font-light text-cyan-500 ml-4 font-semibold rounded-full shadow-sm shadow-slate-400 pl-4 px-2 py-2 focus:outline-none focus:ring focus:ring-cyan-500 focus:shadow-md focus:shadow-cyan-500 duration-200">
+        <button class="js-search-button duration-200 text-cyan-500 h-10 w-10 rounded-full flex items-center justify-center hover:bg-cyan-500 hover:shadow-md hover:shadow-cyan-500 hover:text-white"><i class="fa-solid fa-magnifying-glass text-xl rounded-full"></i></button>
+      </div>
+
+      <div class="mt-5 text-cyan-500 font-semibold flex justify-center items-center flex-col">
+        <div class="w-40 mb-3"><img class="js-image" src="/images/Rain.png" alt=""></div>
+        <p class="js-temperature text-2xl">30°C</p>
+        <p class="js-weather-description text-xl">Description</p>
+      </div>
+
+      <div class="flex w-full justify-between mt-5 text-cyan-500">
+        <div class="flex items-center gap-2">
+          <i class="fa-solid fa-droplet text-3xl text-cyan-600"></i>
+          <div class="">
+            <div class="js-humidity text-xl">0%</div>
+            <div class="text-xs">Humidity</div>
+          </div>
+        </div>
+
+        <div class="flex items-center gap-2">
+          <i class="fa-solid fa-wind text-3xl text-cyan-600"></i>
+          <div class="">
+            <div class="js-windSpeed text-xl">12Km/H</div>
+            <div class="text-xs">Wind Speed</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <script src="/src/Weather.js"></script>
+</body>
+</html>
